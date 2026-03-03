@@ -1,0 +1,129 @@
+   * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* ===== GERAL ===== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background-color: #111;
+      border-bottom: 2px solid rgb(197, 151, 90);
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: rgb(197, 151, 90);
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: rgb(197, 151, 90);
+    }
+
+    .search-box input {
+      padding: 6px 10px;
+      border: 1px solid rgb(197, 151, 90);
+      border-radius: 20px;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      width: 180px;
+      transition: 0.3s;
+    }
+
+    .search-box input:focus {
+      width: 250px;
+      border-color: white;
+    }
+    .servs {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 150px;
+      flex-wrap: wrap;
+    }
+
+    .serv1, .serv2 {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 20px;
+      width: 380px;
+      box-shadow: 0 0 15px rgba(197, 151, 90, 0.3);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .serv1:hover, .serv2:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(197, 151, 90, 0.6);
+    }
+
+    .ft {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      background-color: rgb(197, 151, 90);
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .servs {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+footer{
+  text-align: center;
+  margin-top: 200px;
+  padding: 30px;
+  color: rgb(51, 51, 51);
+  background-color: #000;
+font: italic 1rem Arial, Helvetica, sans-serif;
+} 

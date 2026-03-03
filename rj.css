@@ -1,0 +1,209 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* ===== GERAL ===== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background-color: #111;
+      border-bottom: 2px solid rgb(197, 151, 90);
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: rgb(197, 151, 90);
+    }
+
+    .logo span {
+      color: white;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: rgb(197, 151, 90);
+    }
+
+    .search-box input {
+      padding: 6px 10px;
+      border: 1px solid rgb(197, 151, 90);
+      border-radius: 20px;
+      outline: none;
+      background-color: transparent;
+      color: white;
+      width: 180px;
+      transition: 0.3s;
+    }
+
+    .search-box input:focus {
+      width: 250px;
+      border-color: white;
+    }
+    /* ========== FILMES EM CARTAZ ========== */
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+h2{
+  margin-top: 40px;
+  font-size: 37px;
+  color: rgb(255, 255, 255);
+}
+
+.filmes{
+  background-color: #111;
+  border-radius: 15px;
+  width: 800px;
+  padding: 25px;
+  height: 370px;
+  margin: 40px;
+  display: flex;
+}
+.img{
+  border-radius: 10px;
+}
+img {
+  width: 200px;
+  border-radius: 20px;
+}
+.info{
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.info-minutes{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.assista-compre{
+  display: flex;
+ 
+  gap: 10px;
+} 
+.assista-online{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer; 
+}
+.material-symbols-outlined {
+  font-size: 18px;
+  vertical-align: sub;
+}
+.compra-ingresso{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+}
+img#img-play{
+  width: 20px;
+  height: 20px;
+  color: #000;
+  background-color: #000;
+}
+.classificacao-idade14{
+  background-color: #f58220;
+  color: #fff;
+ 
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.classificacao-idade6{
+  background-color: #e43492;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.classificacao-idade16{
+  background-color: #be0000;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.crg{
+ margin: 25px;
+}
+h3{
+  font-weight: bold;
+
+}
+
+.botoes{
+  margin-left: 3px;
+  margin-top: 30px;
+
+}
+
+.bt1{
+border: none;
+border-radius: 10px;
+width: 85px;
+height: 30px;
+}
+.bt2{
+  margin: 0 15px;
+border: none;
+border-radius: 10px;
+width: 85px;
+height: 30px;
+}
+.bt1:hover, .bt2:hover{
+  transform: scale(1.07);
+  transition: 0.1s;
+  background-color: rgb(61, 61, 60);
+  color: white;
+  cursor: pointer;
+}
+.sinopse {
+  margin-top: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* ========= FOOTER ========= */
+
+footer{
+  text-align: center;
+  margin-top: 200px;
+  padding: 30px;
+  color: rgb(51, 51, 51);
+  background-color: #000;
+font: italic 1rem Arial, Helvetica, sans-serif;
+} 
