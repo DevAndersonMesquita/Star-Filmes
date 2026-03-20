@@ -1,0 +1,24 @@
+{
+  "name": "starfilmes",
+  "version": "1.0.0",
+  "description": "Projeto de site de filmes, no qual há a possibilidade de assitir em casa um no cinema, como você preferir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAndersonMesquita/Star-Filmes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevAndersonMesquita/Star-Filmes/issues"
+  },
+  "homepage": "https://github.com/DevAndersonMesquita/Star-Filmes#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
