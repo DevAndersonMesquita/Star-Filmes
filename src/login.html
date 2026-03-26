@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StarFilmes - Login</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="assets/CSS/login.css">
 </head>
 <body>
   <header class="navbar">
@@ -25,10 +25,11 @@
 
   <section class="container">
     <div class="frm">
-      <form>
+      <form action="http://localhost:3000/api/login" method="post">
+
         <h2>Entrar na sua conta</h2>
-        <input class="input" type="text" placeholder="E-mail ou CPF">
-        <input class="input" type="password" placeholder="Senha">
+        <input class="input" name="email" type="text" placeholder="E-mail ou CPF">
+        <input class="input" name="senha" type="password" placeholder="Senha">
         <button type="submit">Entrar</button>
       </form>
     </div>

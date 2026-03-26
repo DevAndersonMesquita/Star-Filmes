@@ -1,7 +1,9 @@
-const express = require("express");
+import express from "express"
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
 
 app.get("/api/filmes", (req, res) => {
   res.json([
@@ -12,5 +14,16 @@ app.get("/api/filmes", (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("Servidor rodando em http://localhost:3000");
+  console.log("Servidor rodando em http://localhos0t:300");
+});
+
+app.post("/api/login", (req, res ) =>{ 
+
+ const {email, senha } = req.body
+console.log(req.body)
+
+ res.json([
+    { email: email},
+    { senha: senha},
+  ])
 });
