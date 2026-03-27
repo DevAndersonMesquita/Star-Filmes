@@ -1,4 +1,6 @@
 import express from "express"
+import usuario from "./src/models/usuario.js";
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -13,8 +15,21 @@ app.get("/api/filmes", (req, res) => {
   ]);
 });
 
+usuario.sync()
+app.post("/api/usuario", async (req , res) =>{
+    const {email, senha, nome} = req.body
+    await usuario.create({
+      email: email,
+      senha: senha
+    })
+    res.json([
+      {email: email},
+      {senha: senha}
+    ])
+  })
+
 app.listen(3000, () => {
-  console.log("Servidor rodando em http://localhos0t:300");
+  console.log("Servidor rodando em http://localhost:3000");
 });
 
 app.post("/api/login", (req, res ) =>{ 
@@ -27,3 +42,4 @@ console.log(req.body)
     { senha: senha},
   ])
 });
+
