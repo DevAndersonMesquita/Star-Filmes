@@ -134,3 +134,19 @@ button:hover {
     width: 85%;
   }
 }
+
+
+/* ===== CADASTRO ===== */
+
+.frm-cadastro {
+ display: flex;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+.frm-cadastro a {
+  color: rgb(197, 151, 90);
+  text-decoration: none;
+  transition: 0.3s;
+}
