@@ -1,3 +1,26 @@
+# Dependências
 node_modules/
-.env/
-database.sqlite/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.development
+.env.production
+
+# Banco de dados
+database.sqlite
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

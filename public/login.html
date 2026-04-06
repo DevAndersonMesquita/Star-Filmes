@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StarFilmes - Login</title>
+  <script src="script.js"></script>
   <link rel="stylesheet" href="/assets/CSS/login.css">
 </head>
 <body>
@@ -13,9 +14,9 @@
     </div>
 
     <nav class="nav-links">
-      <a href="indexcine.html">Início</a>
-      <a href="login.html" class="active">Login</a>
-      <a href="#">Contato</a>
+      <a href="/indexcine.html">Início</a>
+      <a href="./login.html" class="active">Login</a>
+      <a href="./contato.html">Contato</a>
     </nav>
 
     <div class="search-box">
@@ -25,12 +26,13 @@
 
   <section class="container">
     <div class="frm">
-      <form action="http://localhost:3000/api/login" method="post">
+      <form id="formLogin">
         
         <h2>Entrar na sua conta</h2>
-        <input class="input" name="email" type="text" placeholder="E-mail ou CPF">
-        <input class="input" name="senha" type="password" placeholder="Senha">
-        <button type="submit">Entrar</button>
+        <input class="input" name="email" id="email" type="text" placeholder="E-mail ou CPF">
+        <input class="input" name="senha" id="senha" type="password" placeholder="Senha">
+        <p class="frm-cadastro">Nao tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <button type="button" id="btnLogin" onclick="entrar()"  >Entrar</button>
       </form>
     </div>
   </section>

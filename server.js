@@ -1,5 +1,10 @@
-import express from "express"
+import express from "express";
 import usuario from "./src/models/usuario.js";
+import bcrypt from "bcrypt" ;
+import  jwt  from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config()
 
 const app = express();
 app.use(express.json());
@@ -16,30 +21,55 @@ app.get("/api/filmes", (req, res) => {
 });
 
 usuario.sync()
-app.post("/api/usuario", async (req , res) =>{
-    const {email, senha, nome} = req.body
-    await usuario.create({
-      email: email,
-      senha: senha
-    })
-    res.json([
-      {email: email},
-      {senha: senha}
-    ])
-  })
+app.post("/api/usuario", async (req, res) => {
+    const { email, senha } = req.body;
+    try{
 
-app.listen(3000, () => {
-  console.log("Servidor rodando em http://localhost:3000");
-});
+  const hash = await bcrypt.hash(senha, 10);
+  await usuario.create({ email: email, senha: hash })
+  res.status(201).json({ mensagem: "Usuário cadastrado com sucesso!" })
 
-app.post("/api/login", (req, res ) =>{ 
+    } catch (error) {
+  res.status(400).json({ mensagem: "Erro ao cadastrar usuário!" })
+  }
+  });
 
- const {email, senha } = req.body
-console.log(req.body)
+  
+  
+  app.post("/api/login", async (req, res) => {
+    const { email, senha } = req.body;
+    try {
+      const usuarioEncontrado = await usuario.findOne({ where: { email: email } });
 
- res.json([
-    { email: email},
-    { senha: senha},
-  ])
-});
+     if (!usuarioEncontrado) {
+  return res.status(404).json({ mensagem: "Usuário não encontrado." });
+}
 
+
+
+
+const senhaValida = await bcrypt.compare(senha, usuarioEncontrado.senha);
+
+if (!senhaValida) {
+  return res.status(401).json({ mensagem: "Senha incorreta." });
+}
+      const token = jwt.sign(
+        { id: usuarioEncontrado.id, email: usuarioEncontrado.email }, // dados do usuário
+        process.env.JWT_SECRET, // chave secreta do .env
+        { expiresIn: "7d" } // expira em 7 dias
+      )
+      res.json({ mensagem: "Login bem-sucedido!", token: token });
+      
+    } catch (error) {
+      res.status(500).json({ mensagem: "Erro interno." })
+    }
+  })  ;
+
+
+
+
+
+
+    app.listen(3000, () => {
+      console.log("Servidor rodando em http://localhost:3000");
+    });
