@@ -19,7 +19,7 @@ async function cadastrar() {
     if (resposta.ok){
         window.location.href = "indexcine.html";
     }else{
-        alert(dados.mensagem);
+        alert('Está conta não existe!');
     
     }
 } 

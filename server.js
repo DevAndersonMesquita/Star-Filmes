@@ -20,7 +20,7 @@ app.get("/api/filmes", (req, res) => {
   ]);
 });
 
-usuario.sync()
+usuario.sync({alter : true})
 app.post("/api/usuario", async (req, res) => {
     const { email, senha } = req.body;
     try{
@@ -63,7 +63,7 @@ if (!senhaValida) {
     } catch (error) {
       res.status(500).json({ mensagem: "Erro interno." })
     }
-  })  ;
+  });
 
 
 

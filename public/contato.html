@@ -4,33 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - StarFilmes</title>
-    <link rel="stylesheet" href="/assets/CSS/contato.css">
+    <link rel="stylesheet" href="/public/assets/CSS/contato.css">
 </head>
 <body>
      <header class="navbar">
     <div class="logo">
-      <h1>Star<span>Filmes</span></h1>
+      <h1 onclick="window.location.href='/public/indexcine.html'">Star<span>Filmes</span></h1>
     </div>
 
     <nav class="nav-links">
-      <a href="/indexcine.html">Início</a>
-      <a href="./login.html">Login</a>
-      <a href="./contato.html">Contato</a>
+      <a href="/public/contato.html">Contato</a>
+        <a href="/public/sobre.html">Sobre</a>
+        
+      <div class="search-box">
+          <input type="search" placeholder="Digite seu filme...">
+        </div>
     </nav>
-     <div class="search-box">
-      <input type="search" placeholder="Digite seu filme...">
-    </div>
   </header>
+<section class="contato-section">
 
-    <section>
+    <h1 class="titulo-contato">Contato</h1>
+    <p class="subtitulo">
+        Fale com a equipe StarFilmes
+    </p>
 
-        <h1>Contato</h1>
-    <p> created by Anderson Mesquita Da Silva</p>
+    <div class="contato-container">
 
-    <a href=""></a>
-    <button >Enviar Mensagem</button>
-    <button>Enviar Mensagem</button>
-    <button>Enviar Mensagem</button>
-    </section>
+        <!-- FORMULÁRIO -->
+        <div class="formulario">
+
+            <h2>Envie uma mensagem</h2>
+
+            <input type="text"
+                   placeholder="Seu nome">
+
+            <input type="email"
+                   placeholder="Seu email">
+
+            <textarea
+                placeholder="Digite sua mensagem">
+            </textarea>
+
+            <button>
+                Enviar Mensagem
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+    <p>© 2024 StarFilmes. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
