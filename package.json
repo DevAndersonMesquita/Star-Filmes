@@ -4,6 +4,7 @@
   "description": "Projeto de site de filmes, no qual há a possibilidade de assitir em casa um no cinema, como você preferir.",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
