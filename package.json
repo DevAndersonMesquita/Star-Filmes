@@ -4,6 +4,7 @@
   "description": "Projeto de site de filmes, no qual há a possibilidade de assitir em casa um no cinema, como você preferir.",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +25,6 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.20.0",
-    "sequelize": "^6.37.8",
-    "sqlite3": "^6.0.1"
+    "sequelize": "^6.37.8"
   }
 }
