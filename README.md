@@ -28,12 +28,12 @@ O projeto está publicado na **Microsoft Azure Cloud**:
 * CI/CD: GitHub Actions
 
 ---
----
-
 ## 📁 Estrutura do projeto
+
+```
 STARFILMES/
 │
-├── public/                # Frontend (arquivos públicos)
+├── public/
 │   ├── assets/
 │   │   ├── CSS/
 │   │   └── imagens/
@@ -43,14 +43,15 @@ STARFILMES/
 │   ├── rj.html
 │   └── sp.html
 │
-├── src/                   # Backend (lógica da aplicação)
+├── src/
 │   ├── controllers/
 │   ├── models/
 │   └── database/
 │
-├── server.js              # Inicialização do servidor
+├── server.js
 ├── package.json
 └── README.md
+```
 
 ---
 
