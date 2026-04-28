@@ -28,6 +28,7 @@ O projeto está publicado na **Microsoft Azure Cloud**:
 * CI/CD: GitHub Actions
 
 ---
+---
 
 ## 📁 Estrutura do projeto
 STARFILMES/
