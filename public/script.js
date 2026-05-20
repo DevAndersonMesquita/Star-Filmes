@@ -17,7 +17,7 @@ async function cadastrar() {
     
     const dados = await resposta.json();    
     if (resposta.ok){
-        window.location.href = "indexcine.html";
+        window.location.href = "index.html";
     }else{
         alert('Está conta não existe!');
     
