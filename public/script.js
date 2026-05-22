@@ -38,7 +38,7 @@ async function entrar() {
     const dados = await resposta.json()
     if(resposta.ok){
         localStorage.setItem("token", dados.token)
-        window.location.href = "indexcine"
+        window.location.href = "index.html"
     }else{
         alert(dados.mensagem)
     }
