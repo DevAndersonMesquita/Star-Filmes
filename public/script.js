@@ -17,7 +17,7 @@ async function cadastrar() {
     
     const dados = await resposta.json();    
     if (resposta.ok){
-        window.location.href = "indexcine.html";
+        window.location.href = "index.html";
     }else{
         alert('Está conta não existe!');
     
@@ -38,7 +38,7 @@ async function entrar() {
     const dados = await resposta.json()
     if(resposta.ok){
         localStorage.setItem("token", dados.token)
-        window.location.href = "/puclic/index.html"
+        window.location.href = "index.html"
     }else{
         alert(dados.mensagem)
     }

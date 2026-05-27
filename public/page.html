@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarFilmes — Em Cartaz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/public/assets/CSS/page.css">
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="navbar" id="navbar">
+    <a class="logo" href="/public/index.html">Star<span>Filmes</span></a>
+    <nav class="nav-links">
+      <a href="/public/contato.html">Contato</a>
+      <a href="/public/sobre.html">Sobre</a>
+      <div class="search-box">
+        <!-- ícone lupa -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" placeholder="Buscar filme...">
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ HERO (destaque: Avatar) ══ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Destaque da Semana
+      </div>
+      <h1 class="hero-title">Avatar:<br>Fogo e Cinzas</h1>
+      <div class="hero-meta">
+        <span class="age-badge">14</span>
+        <span>Ação</span>
+        <span class="hero-dot">●</span>
+        <span>197 min</span>
+        <span class="hero-dot">●</span>
+        <span>2025</span>
+      </div>
+      <p class="hero-synopsis">Após a devastadora guerra contra a RDA e a perda do seu filho mais velho, Jake Sully e Neytiri enfrentam uma nova ameaça: o Povo das Cinzas, uma tribo Na'vi conhecida por sua violência extrema e sede de poder.</p>
+      <div class="hero-actions">
+        <button class="btn-play">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Assistir Online
+        </button>
+        <button class="btn-ticket">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          Comprar Ingresso
+        </button>
+      </div>
+      <div class="hero-showtimes">
+        <span class="showtime-pill">14:30</span>
+        <span class="showtime-pill">19:00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ GRID DE FILMES ══ -->
+  <main>
+    <div class="section-wrap">
+      <div class="section-label">
+        <h2>Filmes em Cartaz</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="movies-grid">
+
+        <!-- Card 1 — Avatar -->
+        <article class="movie-card">
+          <div class="card-poster">
+            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/avatar-fogo-e-cinzas/716c20d3-c76d-4e3d-9365-3a0d94eca6a5.webp" alt="Avatar: Fogo e Cinzas" loading="lazy">
+            <span class="card-age a14">14</span>
+            <div class="card-play-btn">
+              <span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Avatar: Fogo e Cinzas</div>
+            <div class="card-meta">
+              <span>Ação</span>
+              <span class="card-meta-dot">·</span>
+              <span>197 min</span>
+            </div>
+            <div class="card-showtimes">
+              <span class="time-chip">14:30</span>
+              <span class="time-chip">19:00</span>
+            </div>
+            <div class="card-buttons">
+              <button class="card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Online
+              </button>
+              <button class="card-btn-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Ingresso
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 — Zootopia 2 -->
+        <article class="movie-card">
+          <div class="card-poster">
+            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/zootopia-2/3d1848cc-3a3f-4a9d-bfea-62568e4d40f9.webp" alt="Zootopia 2" loading="lazy">
+            <span class="card-age a6">6</span>
+            <div class="card-play-btn">
+              <span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Zootopia 2</div>
+            <div class="card-meta">
+              <span>Animação</span>
+              <span class="card-meta-dot">·</span>
+              <span>108 min</span>
+            </div>
+            <div class="card-showtimes">
+              <span class="time-chip">17:00</span>
+              <span class="time-chip">21:00</span>
+            </div>
+            <div class="card-buttons">
+              <button class="card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Online
+              </button>
+              <button class="card-btn-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Ingresso
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 — A Empregada -->
+        <article class="movie-card">
+          <div class="card-poster">
+            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/a-empregada/4e37e5ca-5b88-4eee-8bee-07842a605e2f.webp" alt="A Empregada" loading="lazy">
+            <span class="card-age a16">16</span>
+            <div class="card-play-btn">
+              <span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">A Empregada</div>
+            <div class="card-meta">
+              <span>Suspense</span>
+              <span class="card-meta-dot">·</span>
+              <span>131 min</span>
+            </div>
+            <div class="card-showtimes">
+              <span class="time-chip">18:30</span>
+              <span class="time-chip">22:00</span>
+            </div>
+            <div class="card-buttons">
+              <button class="card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Online
+              </button>
+              <button class="card-btn-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Ingresso
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 — O Agente Secreto -->
+        <article class="movie-card">
+          <div class="card-poster">
+            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-agente-secreto/47039d63-8d09-4ab4-a6b3-4ae242d22c2b.webp" alt="O Agente Secreto" loading="lazy">
+            <span class="card-age a16">16</span>
+            <div class="card-play-btn">
+              <span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">O Agente Secreto</div>
+            <div class="card-meta">
+              <span>Drama, Policial</span>
+              <span class="card-meta-dot">·</span>
+              <span>161 min</span>
+            </div>
+            <div class="card-showtimes">
+              <span class="time-chip">15:30</span>
+              <span class="time-chip">19:40</span>
+            </div>
+            <div class="card-buttons">
+              <button class="card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Online
+              </button>
+              <button class="card-btn-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Ingresso
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 — O Morro dos Ventos Uivantes -->
+        <article class="movie-card">
+          <div class="card-poster">
+            <img src="https://ingresso-a.akamaihd.net/prd/img/movie/o-morro-dos-ventos-uivantes/c49d48d8-a444-4e81-86cd-18ea1cad5202.webp" alt="O Morro dos Ventos Uivantes" loading="lazy">
+            <span class="card-age a16">16</span>
+            <div class="card-play-btn">
+              <span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-title">O Morro dos Ventos Uivantes</div>
+            <div class="card-meta">
+              <span>Romance</span>
+              <span class="card-meta-dot">·</span>
+              <span>134 min</span>
+            </div>
+            <div class="card-showtimes">
+              <span class="time-chip">17:30</span>
+              <span class="time-chip">21:25</span>
+            </div>
+            <div class="card-buttons">
+              <button class="card-btn-primary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Online
+              </button>
+              <button class="card-btn-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                Ingresso
+              </button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 6 — Missão Impossível 8 -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/yKQjrwgEkPOGel3JKT2neJzu0jh.jpg" alt="Missão Impossível: O Acerto Final" loading="lazy">
+    <span class="card-age a14">14</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Missão Impossível 8</div>
+    <div class="card-meta"><span>Ação</span><span class="card-meta-dot">·</span><span>169 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">14:00</span>
+      <span class="time-chip">18:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 7 — Jurassic World: Renascimento -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://www.themoviedb.org/t/p/w600_and_h900_face/zuEC2i3I2P7QIcLoUJNBwqRYO4S.jpg" alt="Jurassic World: Renascimento" loading="lazy">
+    <span class="card-age a12">12</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Jurassic World: Renascimento</div>
+    <div class="card-meta"><span>Aventura</span><span class="card-meta-dot">·</span><span>118 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">15:00</span>
+      <span class="time-chip">20:15</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 8 — Como Treinar Seu Dragão -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/vdvEClt3J8sFWxyMo0Jm7JpouEo.jpg" alt="Como Treinar Seu Dragão" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Como Treinar Seu Dragão</div>
+    <div class="card-meta"><span>Animação</span><span class="card-meta-dot">·</span><span>125 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">13:30</span>
+      <span class="time-chip">17:45</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 9 — Superman -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/xeZ8oG6W60fEPf9yCjERUXiHRBF.jpg" alt="Superman" loading="lazy">
+    <span class="card-age a12">12</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Superman</div>
+    <div class="card-meta"><span>Ação, Sci-Fi</span><span class="card-meta-dot">·</span><span>138 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">16:00</span>
+      <span class="time-chip">21:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 10 — Exterminador do Futuro: Zero Dia -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://br.web.img3.acsta.net/c_310_420/img/6b/4b/6b4bff3b95dd031c912eaec659d37ed6.jpg" alt="O Exterminador do Futuro: Zero Dia" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Exterminador: Zero Dia</div>
+    <div class="card-meta"><span>Ação, Sci-Fi</span><span class="card-meta-dot">·</span><span>122 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">19:00</span>
+      <span class="time-chip">22:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 11 — Lilo & Stitch -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/m58Oxr3OZZbP2kTX2tj8TiAMLSv.jpg" alt="Lilo & Stitch" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Lilo & Stitch</div>
+    <div class="card-meta"><span>Família</span><span class="card-meta-dot">·</span><span>108 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">14:00</span>
+      <span class="time-chip">18:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 12 — A Fantástica Fábrica de Chocolate -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/vSl1u0z4TCKL4VPVyr6KDtZibYT.jpg" alt="A Fantástica Fábrica de Chocolate" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Fábrica de Chocolate</div>
+    <div class="card-meta"><span>Fantasia</span><span class="card-meta-dot">·</span><span>115 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">13:00</span>
+      <span class="time-chip">16:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 13 — Sítio do Picapau Amarelo -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bV59xZxSITt69QOFWMvArNIwjWk.jpg" alt="Sítio do Picapau Amarelo" loading="lazy">
+    <span class="card-age a6">L</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Sítio do Picapau Amarelo</div>
+    <div class="card-meta"><span>Família</span><span class="card-meta-dot">·</span><span>95 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">12:30</span>
+      <span class="time-chip">15:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 14 — Thunderbolts -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/3cME244QKWg5mAvcsmthmtx7VR1.jpg" alt="Thunderbolts" loading="lazy">
+    <span class="card-age a14">14</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Thunderbolts*</div>
+    <div class="card-meta"><span>Ação, Marvel</span><span class="card-meta-dot">·</span><span>127 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">15:45</span>
+      <span class="time-chip">20:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 15 — Novocaine -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/knIEw2jWOxrb6ugNPEoaiYI6p77.jpg" alt="Novocaine" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Novocaine</div>
+    <div class="card-meta"><span>Ação, Thriller</span><span class="card-meta-dot">·</span><span>110 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">17:15</span>
+      <span class="time-chip">21:45</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 16 — O Retorno de Lassie -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/21/07/12/15/57/3872158.jpg" alt="O Retorno de Lassie" loading="lazy">
+    <span class="card-age a6">L</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">O Retorno de Lassie</div>
+    <div class="card-meta"><span>Família</span><span class="card-meta-dot">·</span><span>102 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">13:00</span>
+      <span class="time-chip">16:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 17 — Ballerina -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/by5hjYJp3OJ8GW118kPeURp1rFo.jpg" alt="Ballerina" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Ballerina</div>
+    <div class="card-meta"><span>Ação</span><span class="card-meta-dot">·</span><span>120 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">18:00</span>
+      <span class="time-chip">22:15</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 18 — A Minecraft Movie -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/a227F8PnXDABR1JJTuasmJmxEhf.jpg" alt="Um Filme Minecraft" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Um Filme Minecraft</div>
+    <div class="card-meta"><span>Aventura</span><span class="card-meta-dot">·</span><span>101 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">14:30</span>
+      <span class="time-chip">17:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 19 — Predador: Badlands -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/f3yLlUrJDdDL8d4nxywyotN45SL.jpg" alt="Predador: Badlands" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Predador: Badlands</div>
+    <div class="card-meta"><span>Ação, Sci-Fi</span><span class="card-meta-dot">·</span><span>114 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">19:30</span>
+      <span class="time-chip">22:45</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 20 — Espelho da Morte -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/vvVs7Oy4NgyOtQ6bz9081xhzjQx.jpg" alt="Espelho da Morte" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Espelho da Morte</div>
+    <div class="card-meta"><span>Terror</span><span class="card-meta-dot">·</span><span>98 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">20:00</span>
+      <span class="time-chip">23:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 21 — A Fortaleza -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/hYi00SLc8v92h5i4MoluCvIwLG1.jpg" alt="A Fortaleza" loading="lazy">
+    <span class="card-age a14">14</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">A Fortaleza</div>
+    <div class="card-meta"><span>Thriller</span><span class="card-meta-dot">·</span><span>105 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">16:30</span>
+      <span class="time-chip">21:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 22 — Mufasa -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/iMVuv6Gz5fj7vZ51IjRF3AiW87y.jpg" alt="Mufasa: O Rei Leão" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Mufasa: O Rei Leão</div>
+    <div class="card-meta"><span>Animação</span><span class="card-meta-dot">·</span><span>118 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">14:00</span>
+      <span class="time-chip">18:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 23 — Wicked -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/qcaKkLwIXCAxJtpetVYHniCvLZj.jpg" alt="Wicked" loading="lazy">
+    <span class="card-age a12">12</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Wicked</div>
+    <div class="card-meta"><span>Musical, Fantasia</span><span class="card-meta-dot">·</span><span>160 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">15:00</span>
+      <span class="time-chip">19:30</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 24 — Companion -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/9UwxEeoF9ZjDTSIop6MgvY3tBmN.jpg" alt="Companion" loading="lazy">
+    <span class="card-age a16">16</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Companion</div>
+    <div class="card-meta"><span>Terror, Sci-Fi</span><span class="card-meta-dot">·</span><span>94 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">20:30</span>
+      <span class="time-chip">23:15</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+<!-- Card 25 — Elio -->
+<article class="movie-card">
+  <div class="card-poster">
+    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/2H8k54MWPQtsxWkQhR2HVfT34ty.jpg" alt="Elio" loading="lazy">
+    <span class="card-age a10">10</span>
+    <div class="card-play-btn">
+      <span><svg width="20" height="20" viewBox="0 0 24 24" fill="#08090d"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+    </div>
+  </div>
+  <div class="card-info">
+    <div class="card-title">Elio</div>
+    <div class="card-meta"><span>Animação, Pixar</span><span class="card-meta-dot">·</span><span>100 min</span></div>
+    <div class="card-showtimes">
+      <span class="time-chip">13:30</span>
+      <span class="time-chip">16:00</span>
+    </div>
+    <div class="card-buttons">
+      <button class="card-btn-primary"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>Online</button>
+      <button class="card-btn-secondary"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Ingresso</button>
+    </div>
+  </div>
+</article>
+
+      </div><!-- /movies-grid -->
+    </div><!-- /section-wrap -->
+  </main>
+
+  <footer>
+    <div class="footer-logo">Star<span>Filmes</span></div>
+    <p>&copy; 2025 StarFilmes. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Navbar muda ao rolar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+  </script>
+
+</body>
+</html>
