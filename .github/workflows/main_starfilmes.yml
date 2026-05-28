@@ -47,13 +47,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D7B2877167DB4CA895F95CBFB0D2C75A }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0C13A7C034964B73BE9E7FCFE1CBB56F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_89E4C231DB7549BB9E0FDC1A9CEBBA47 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -61,5 +54,6 @@ jobs:
         with:
           app-name: 'StarFilmes'
           slot-name: 'Production'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
           
