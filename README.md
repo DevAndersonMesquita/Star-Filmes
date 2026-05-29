@@ -21,7 +21,7 @@ Sistema web desenvolvido para gerenciamento e visualização de filmes, com func
 
 O projeto está publicado na **Microsoft Azure Cloud**:
 
-🔗 [https://starfilmes-aqdcg3cdgse7b2cn.brazilsouth-01.azurewebsites.net](https://starfilmes-aqdcg3cdgse7b2cn.brazilsouth-01.azurewebsites.net)
+🔗 [https://starfilmes-aqdcg3cdgse7b2cn.southcentralus-01.azurewebsites.net/)
 
 * Hospedagem: Azure App Service (Linux)
 * Banco de dados: Neon (PostgreSQL)
