@@ -17,7 +17,8 @@ async function cadastrar() {
     
     const dados = await resposta.json();    
     if (resposta.ok){
-        window.location.href = "page.html";
+        window.location.href = "indextml";
+        alert('usuário cadastrado com sucesso!')
     }else{
         alert('Está conta não existe!');
     
